@@ -1,0 +1,27 @@
+{% extends "shell.html" %}
+{% load static %}
+
+{% block head %}Articles{% endblock %}
+
+{% block body %}
+<h4 class="mt-5 mb-2">ARTICLES</h4>
+
+<div class="container mb-5">
+  <div class="row">
+      {% for article in articles %}
+        <div class="col-lg-4 mb-3 blogBox">
+          <a href="{% url 'article_view' id=article.id %}" class="card">
+            <div class="colon">„</div>
+            <div class="title-text" style="text-transform: uppercase;">{{article.title}}</div>
+            <div class="name-grade">{{ article.author.name }}, Grade {{ article.author.grade }}</div>
+          </a>
+        </div>
+      {% endfor %}
+    <!-- load more button. works but really really hard to maintain -->
+    <!-- <div id="loadMore" class="mt-5">
+      <a href="write"><button type="button" class="btn btn-white load">Load More</button></a>
+    </div> -->
+  </div>
+</div>
+
+{% endblock %}

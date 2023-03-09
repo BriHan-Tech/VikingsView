@@ -1,0 +1,94 @@
+{% extends "shell.html" %}
+{% load static %}
+
+{% block head %}Home{% endblock %}
+
+{% block body %}
+<div style="background-color:#4D0011; height:43rem" class="d-flex justify-content-center text-center align-items-center">
+  <div>
+    <h1>THE VIKING VIEW</h1>
+    <div class="justify-content-center text-center d-flex">
+      <h2>student-run newspaper.</h2>
+    </div>
+  </div>
+</div>
+<div id="intro" style="background-image:url('{% static "images/b2.jpg" %}')">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+      </div>
+      <div class="col-lg-6 pt-5 pb-5">
+        <div style="background-color:#FFF" class="d-flex justify-content-center p-5 text-center">
+          <div>
+            <div class="mb-4">
+              <h3 style="color:#4D0011">Burnaby North's<br>Student Newspaper</h3>
+            </div>
+            <div>
+              <p style="color:black">To adapt to the extraordinary
+                circumstances, the Viking View is
+                publishing our articles online.
+                Our team of students has worked
+                incredibly hard to digitize our
+                student body's work, and is proud
+                to present our platform for the
+                voices and opinions of Burnaby
+                North Secondary.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row pt-5 pb-5">
+    <div class="col-lg-6">
+      <div style="background-color:#4D0011;height:100%" class="d-flex justify-content-center align-items-center p-5 text-center">
+        <div>
+          <div class="mb-4">
+            <h3>Want to write?</h3>
+          </div>
+          <div class="mb-4">
+            <p>Anyone can become a writer for the Viking View!
+              Our current online platform allows us to
+              publish articles any time of the year.
+            </p>
+          </div>
+          <a href="write"><button type="button" class="btn btn-white">Learn how to submit an article.</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <img src="{% static 'images/vikinghead.jpg' %}" style="width:100%">
+    </div>
+  </div>
+</div>
+
+<div class="paper-strip mb-5 p-5">
+  <div class="container">
+    <div style="background-color:#DEB249" class="d-flex justify-content-center text-center align-items-center p-4">
+      <div>
+        <h3>Read what Burnaby North has to say.</h3>
+        <div class="mt-4">
+          <a href="articles"><button type="button" class="btn btn-white">Explore our articles.</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="d-flex justify-content-center align-items-center text-center mb-5" style="color:black">
+    <div>
+      <h3 style="color:black" class="mb-4">Thank you to:</h3>
+      <p>
+        Mr. Roberts, our club advisor.<br>
+        Ms. Cowley.<br>
+        Ms. Goss.<br>
+        Parents Advisory Council.
+      </p>
+      <div style="font-weight:600;font-size:215%" class="round-font">For supporting us and our online issues.</div>
+    </div>
+  </div>
+</div>
+{% endblock %}

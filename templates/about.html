@@ -1,0 +1,63 @@
+{% extends "shell.html" %}
+{% load static %}
+
+{% block head %}About{% endblock %}
+
+{% block body %}
+<h4 class="mt-5 mb-5">ABOUT</h4>
+
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-lg-6">
+      <h6 class="about">Who are we?</h6>
+      <p class="black">We are a club at Burnaby North Secondary
+        that publishes written works from our student
+        body once every term.
+      </p>
+    </div>
+    <div class="col-lg-6">
+      <h6 class="about">Why are we online?</h6>
+      <p class="black">We could not publish and distribute physically
+        this term so we are making our publication accessible through the internet instead.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div style="background-color:#4D0011" class="d-flex text-center mb-5 justify-content-center">
+  <span class="big-header">our team.</span>
+</div>
+
+<div class="container">
+  <div class="row" style="color:black">
+    {% for member in team %}
+      <div class="col-lg-3 text-center exec-info">
+        <div class="about-name mb-2" style="text-transform: uppercase;">{{member.name}}</div>
+        <div class="about-pos">{{member.position}} — grade {{member.grade}}</div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="paper-strip mb-5 p-5">
+  <div class="container">
+    <div style="background-color:#DEB249" class="d-flex justify-content-center text-center align-items-center p-4">
+      <div>
+        <span class="big-header">contact us.</span>
+        <div class="mt-1">
+          <p>Email us any inquiries at bns.newspaper@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-5">
+  <div class="d-flex justify-content-center align-items-center text-center" style="color:black">
+    <div>
+      <h3 style="color:black" class="mb-2">Do you want to learn how to write for us?</h3>
+      <a href="write" class="OMG-NO-LINK-STYLING"><div class="write-for-us" style="z-index:999"><span class="write-for-us" style="z-index:999">CLICK HERE</span></div></a>
+    </div>
+  </div>
+</div>
+{% endblock %}

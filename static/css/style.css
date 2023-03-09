@@ -1,0 +1,492 @@
+@font-face {
+    font-family: 'Noto-Serif-Display-ExtraCondensed-Medium';
+    src:url('Noto-Serif-Display-ExtraCondensed-Medium.ttf.woff') format('woff'),
+        url('Noto-Serif-Display-ExtraCondensed-Medium.ttf.svg#Noto-Serif-Display-ExtraCondensed-Medium') format('svg'),
+        url('Noto-Serif-Display-ExtraCondensed-Medium.ttf.eot'),
+        url('Noto-Serif-Display-ExtraCondensed-Medium.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto-Serif-Display-ExtraCondensed-Bold';
+    src:url('Noto-Serif-Display-ExtraCondensed-Bold.ttf.woff') format('woff'),
+        url('Noto-Serif-Display-ExtraCondensed-Bold.ttf.svg#Noto-Serif-Display-ExtraCondensed-Bold') format('svg'),
+        url('Noto-Serif-Display-ExtraCondensed-Bold.ttf.eot'),
+        url('Noto-Serif-Display-ExtraCondensed-Bold.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'Noto-Serif-Display-ExtraCondensed-Medium', sans-serif !important;
+  background-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+body, html {
+  height: 100%;
+}
+
+* {
+  border-radius: 0 !important;
+}
+
+h1 {
+  font-family: 'Noto-Serif-Display-ExtraCondensed-Medium';
+  color: white;
+  font-size: 500%;
+  letter-spacing: .2em;
+}
+
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #DEB249;
+  font-weight: 600;
+  font-size: 300%;
+}
+
+h3 {
+  font-family: 'Noto-Serif-Display-ExtraCondensed-Bold';
+  font-size: 250%;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 150%;
+}
+
+footer {
+  background:#4D0011;
+}
+
+footer h6 {
+  font-size: 80%
+}
+
+footer .subtext{
+  margin-bottom: 8px;
+  font-size:75%;
+}
+
+footer .subtext a {
+  color:white;
+}
+
+h4 {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Noto-Serif-Display-ExtraCondensed-Medium', sans-serif;
+  position: relative;
+  font-size: 6rem;
+  letter-spacing: .8rem;
+  z-index: 1;
+  text-shadow: 0px 0px 1px #000000;
+}
+
+a.card-bottom {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  border-style: none;
+}
+
+a.card {
+  color: black;
+  text-decoration: none;
+  border-style: none;
+  transition: transform .2s;
+}
+
+.blogBox a.card {
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+a.card:hover {
+  transform: scale(1.1);
+}
+
+.article-title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.article {
+  color: black;
+}
+
+.colon {
+  font-size: 6rem;
+  font-family: 'Spirax', cursive;
+}
+
+.title-text {
+  font-size: 1.3rem;
+  letter-spacing: .1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 800;
+}
+
+.bottom-text {
+  font-family: 'Source Sans Pro', sans-serif;
+  /* font-family: 'Noto-Serif-Display-ExtraCondensed-Medium', sans-serif; */
+  font-size:1.3rem;
+  font-weight: 300;
+}
+
+.name-grade {
+  font-size: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+.name-grade-big {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.3rem;
+}
+
+.big-header {
+  font-family: 'Noto-Serif-Display-ExtraCondensed-Medium', sans-serif;
+  font-size: 6rem;
+}
+
+h6.about {
+  font-family: 'Noto-Serif-Display-ExtraCondensed-Bold', sans-serif;
+  color: #4D0011;
+  font-style: italic;
+  font-size: 250%;
+}
+
+h4::before {
+  border-top: 2.1rem solid #DEB249;
+  content:"";
+  margin: 0 auto; /* this centers the line to the full width specified */
+  position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 40%; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  z-index: -1;
+  transition: width 2.5s;
+}
+
+.write-for-us::before {
+  border-top: 2.1rem solid #DEB249;
+  content:"";
+  margin: 0 auto; /* this centers the line to the full width specified */
+  position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 40%; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  z-index: -1;
+  transition: width 2.5s;
+}
+
+span.write-for-us {
+    /* to hide the lines from behind the text, you have to set the background color the same as the container */
+    background: #fff;
+    padding: 0 15px;
+}
+
+
+a.OMG-NO-LINK-STYLING {
+  text-decoration: none !important;
+}
+
+.title-text-bottom {
+  font-family: 'Noto-Serif-Display-ExtraCondensed-Medium', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+}
+
+.name-grade-bottom {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.write-for-us {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Noto-Serif-Display-ExtraCondensed-Medium', sans-serif;
+  position: relative;
+  font-size: 6rem;
+  z-index: 999;
+  /* text-shadow: 1px 1px 1px #000000; */
+}
+
+#intro {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.step {
+  margin-bottom: 1.3rem;
+}
+
+.exec-info {
+  margin-bottom: 3rem;
+}
+
+.about-name {
+  font-size: 140%;
+  font-family: 'Noto-Serif-Display-ExtraCondensed-Bold', sans-serif;
+}
+
+.about-pos {
+  font-style: italic;
+  font-size: 110%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.about-grade {
+  font-size: 80%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.black {
+  color: black;
+  font-weight: 400;
+}
+
+.paper-strip {
+  background-image: url("../images/b3.JPG");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-toggler {
+  padding: 0 0;
+  line-height: 0;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler {
+  padding: 0 0;
+  line-height: 0;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar {
+  font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
+  background: #4D0011;
+  z-index: 10;
+  width: 100%;
+}
+
+.navbar-nav {
+  margin: 0px -15px;
+}
+
+.navbar-nav > li{
+  font-weight: 500;
+  font-size: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: .8rem;
+  padding-bottom: .8rem;
+}
+
+.navbar-nav .nav-item > a {
+  color: #FFF;
+}
+
+.navbar-brand {
+  color: #000;
+  padding-left: 30px;
+}
+
+.navbar-toggler-icon {
+  background-image: url('../images/menu.png');
+  background-size: 1rem 1rem;
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: .3rem;
+  background: #DEB249;
+  transition: width .5s;
+}
+
+.round-font {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.btn-white {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 170%;
+  color: black;
+  background-color: #FFF;
+  border-color: none;
+}
+
+.btn-white:hover {
+  color: #FFF;
+  background-color: transparent;
+  border-color: none;
+}
+
+.btn-white:focus, .btn-white.focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-outline-dark {
+  color: #FFF;
+  border-color: #FFFFFF;
+}
+
+.btn-outline-dark:hover {
+  color: #D2C295;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.btn-outline-dark.disabled, .btn-outline-dark:disabled {
+  color: #FFFFFF;
+  background-color: #FFF;
+}
+
+.btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active,
+.show > .btn-outline-dark.dropdown-toggle {
+  color: #FFF;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.btn-outline-dark:focus, .btn-outline-dark.focus {
+  box-shadow: none;
+}
+
+.btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-dark.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+/* test code */
+
+
+
+@media (max-width: 576px) {
+  .ctmargin {
+    margin-top:50px;
+    margin-bottom:65px;
+  }
+}
+
+@media (max-width: 992px) {
+  .vh {
+    margin-bottom: 10rem;
+  }
+  .navbar-nav > li{
+    margin-left:.4rem;
+    padding-left:0;
+    font-size:.8rem;
+  }
+}
+
+.load.btn-white {
+  font-family: 'Noto-Serif-Display-ExtraCondensed-Medium', sans-serif;
+  font-weight: 200;
+  font-size: 100%;
+  color: white;
+  background-color: #DEB249;
+  border-color: none;
+}
+
+.load.btn-white:hover {
+  color: #DEB249;
+  background-color: transparent;
+  border-color: #DEB249;
+}
+
+.btn-white:focus, .btn-white.focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#loadMore {
+    text-align: center;
+    width: 100%;
+}
+/* #loadMore a {
+    background: #DEB249;
+    text-decoration: none;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    padding: 10px 30px;
+    transition: all 0.25s ease-out;
+    -webkit-font-smoothing: antialiased;
+}
+#loadMore a:hover {
+    background-color: white;
+    color:#DEB249;
+} */
+
+@media (min-width:992px) and (max-width:1200px) {
+    .faqs h1 {
+      font-size: 180%;
+    }
+
+    .faqs p {
+      font-size:90%;
+    }
+}
+
+.also-like > h2{
+  color:black;
+  font-family: 'Noto-Serif-Display-ExtraCondensed-Medium', sans-serif;
+  font-weight: 200;
+  font-size: 175%;
+  font-style: italic;
+}
+
+@media (max-width: 992px) {
+  .also-like {
+    display:none;
+  }
+}
+@media (min-width: 992px) {
+
+  .article {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .active::after {
+    width: 100%;
+  }
+}

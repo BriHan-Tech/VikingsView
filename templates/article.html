@@ -1,0 +1,94 @@
+{% extends "shell.html" %}
+{% load static %}
+
+{% block head %} {{ article.title }} {% endblock %}
+
+{% block body %}
+<div class="container">
+  <div class="mt-5">
+    <div class="article">
+      <div class="mb-3">
+        <img src="{{ article.thumbnail.url }}" alt="problem loading..." width="100%" class="mb-3">
+        <div class="article-title mb-3">{{article.title}}</div>
+        <div class="name-grade-big"><i>{{article.date}}</i><br>{{article.author.name}}, Grade {{article.author.grade}}</div>
+      </div>
+      <div class="mb-3" style="width:13%; height:1rem; background-color:#DEB249"></div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="mb-5">
+    <div class="article" style="text-align:justify;text-justify:auto;">
+      {{article.article | safe}}
+    </div>
+  </div>
+</div>
+
+<div class="mb-5">
+  <div class="text-center mb-5 also-like">
+    <h2>You may also like...</h2>
+  </div>
+</div>
+
+<div class="container mb-5 also-like">
+  <div class="article">
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-6 mb-1">
+        <a href="{% url 'article_view' article.recommended_articles.id %}" class="card-bottom">
+          <img src="{{ article.recommended_articles.thumbnail.url }}" width=100%>
+          <div class="bottom-text">{{article.recommended_articles.title}}</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="d-none d-lg-block round-font">
+  <div class="container">
+    <div class="row pb-5 pt-5">
+      <div class="d-flex col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="">
+          <h5>THE VIKING VIEW</h5>
+          <div class=subtext>Student-run newspaper.</div>
+        </div>
+      </div>
+      <div class="d-flex col-lg-2 col-md-2 col-sm-6 col-xs-12">
+        <div>
+          <h6>EXPLORE</h6>
+          <div class="subtext">
+            <a href="../">home</a>
+          </div>
+          <div class="subtext">
+            <a href="../about">about</a>
+          </div>
+          <div class="subtext">
+            <a href="../articles">articles</a>
+          </div>
+          <div class="subtext">
+            <a href="../write">write</a>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex col-lg-2 col-md-2 col-sm-6 col-xs-12">
+        <div class="">
+          <h6>FOLLOW</h6>
+          <div class="subtext">
+            <a href="https://www.instagram.com/thevikingview/" target="_blank">instagram</a>
+          </div>
+          <div class="subtext">
+            <a href="https://www.facebook.com/vikingview/" target="_blank">facebook</a>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex col-lg-5 col-md-4 col-sm-6 col-xs-12 justify-content-center">
+        <div class="d-flex">
+          <div class="d-flex subtext">
+            Website design by Chloe Jung.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+{% endblock %}
